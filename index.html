@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GadgetSales</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <button id="to-top" onclick="toTop()">To Top</button>
+    <div class="home" id="home">
+        <div class="header">
+            <h2>GadgHub</h2>
+            <nav class="navbar">
+                <div class="links">
+                    <a href="#home">Home</a>
+                    <a href="#phone">Phone</a>
+                    <a href="#tablet">Tablet</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="icons">
+                    <div class="search-icon">
+                        <box-icon name='search' id="searchIcon" onclick="searchClicked()"></box-icon>
+                    </div>
+                    <div class="cart-icon">
+                        <box-icon name='cart' id="cartIcon"></box-icon>
+                    </div>
+                    <div class="menu-icon">
+                        <box-icon name='menu' id="menuIcon" onclick="openMenu()"></box-icon>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="searchBar">
+            <input type="text" id="search" placeholder="Search">
+        </div>
+
+        <div class="content">
+            <div class="circle">
+                <img src="backgroundcircle.jpg">
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde asperiores eius temporibus eum non sed autem vitae velit perferendis itaque recusandae porro voluptas reprehenderit, magni soluta aperiam illo, iure dolore.</p>
+                <button id="exploreButton">Explore Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="phone" id="phone">
+        <div class="phoneimg">
+            <img src="phone1.png">
+            <div class="box"></div>
+        </div>
+        <div class="phonecontent">
+            <h2>IPHONE 14</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quasi nostrum repudiandae distinctio harum. Sapiente, eius sunt. Sapiente, vero sint ducimus harum eum necessitatibus facilis accusamus, non blanditiis iure provident.</p>
+            <p id="price">RM 4,199</p>
+            <div class="color">
+                <span class="phonecolor" data-color="linear-gradient(rgb(235, 140, 248), rgb(184, 61, 184))" style="background-color: rgb(169, 35, 196);"></span>
+                <span class="phonecolor" data-color="linear-gradient(rgb(179, 237, 255), rgb(58, 162, 189))" style="background-color: rgb(164, 182, 241);"></span>
+                <span class="phonecolor" data-color="linear-gradient(rgb(241, 239, 239), rgb(153, 152, 153))" style="background-color: rgb(170, 168, 168);"></span>
+                <span class="phonecolor" data-color="linear-gradient(rgb(114, 247, 158), rgb(34, 155, 80))" style="background-color: rgb(5, 107, 19);"></span>
+            </div>
+            <button>Add to cart</button>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <div class="tablet" id="tablet">
+        <div class="tabletcontent">
+            <h2>IPAD AIR 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam distinctio amet at aspernatur autem dolores vitae consequuntur excepturi rem perspiciatis, numquam debitis doloremque, delectus officiis enim, ab ducimus quaerat ex?</p>
+            <p id="price">RM 3,649</p>
+            <div class="color">
+                <div class="tabletcolor" data-color="linear-gradient(rgb(241, 239, 239), rgb(153, 152, 153))" style="background-color: rgb(170, 168, 168);"></div>
+                <div class="tabletcolor" data-color="linear-gradient(rgb(179, 237, 255), rgb(58, 162, 189))"  style="background-color: rgb(164, 182, 241);"></div>
+                <div class="tabletcolor" data-color="linear-gradient(rgb(255, 194, 235), rgb(231, 121, 176))" style="background-color: pink;"></div>
+                <div class="tabletcolor" data-color="linear-gradient(rgb(235, 140, 248), rgb(184, 61, 184))" style="background-color: rgb(169, 35, 196);"></div>
+            </div>
+            <button>Add to cart</button>
+            <button>Learn More</button>
+        </div>
+        <div class="tabletimg">
+            <img src="tablet.png" alt="">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contactform">
+            <h2>CONTACT US</h2>
+            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consequuntur architecto explicabo sunt tempore quia? Ab, mollitia iusto repudiandae ea unde dolorum est culpa ullam quo reprehenderit quos dolore pariatur.</p>
+            <div class="name">
+                <p>Name</p>
+                <input type="text" placeholder="James" required>
+            </div>
+            <div class="email">
+                <p>Email</p>
+                <input type="email" name="" id="" placeholder="abc@gmail.com" required>
+            </div>
+            <div class="message">
+                <p>Message to us</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write us a message" required></textarea>
+            </div>
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
